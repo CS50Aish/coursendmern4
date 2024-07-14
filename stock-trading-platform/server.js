@@ -4,11 +4,6 @@ const socketIO = require('socket.io');
 const http = require('http');
 const dotenv = require('dotenv');
 
-const stockRoutes = require('./routes/stock');
-
-app.use('/api/stocks', stockRoutes);
-
-
 dotenv.config();
 
 const app = express();
@@ -26,3 +21,19 @@ const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+const stockRoutes = require('./routes/stock');
+
+app.use('/api/stocks', stockRoutes);
+
+
+io.on('connection', (socket) => {
+    console.log('New client connected');
+
+    socket.on('disconnect', () => {
+        console.log('Client disconnected');
+    });
+});
+
+module.exports = { io };
+
