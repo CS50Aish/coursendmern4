@@ -1,0 +1,19 @@
+{
+  "name": "stock-trading-platform",
+  "version": "1.0.0",
+  "description": "Course End Project on developing backend and express for stock api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "socket.io": "^4.7.5"
+  }
+}
