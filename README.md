@@ -232,3 +232,17 @@ To address all issues (including breaking changes), run:
 
 Run `npm audit` for details.
 
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-frontend$ npm install jwt-decode
+
+added 1 package, and audited 1561 packages in 3s
+
+261 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
