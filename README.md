@@ -246,3 +246,46 @@ To address all issues (including breaking changes), run:
 
 Run `npm audit` for details.
 
+Compiled successfully!
+
+You can now view stock-trading-frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://10.0.0.4:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+
+labuser@ubuntu2204:~/Desktop/coursendmern4$ cd stock-trading-platform/
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ ls
+middleware  node_modules  package-lock.json  package.json  routes  server.js  services
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ cd services/
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/services$ ls
+stockService.js
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/services$ npm install mocha -D
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 70 packages, and audited 201 packages in 6s
+
+34 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/services$ mocha stockService.js 
+Server running on port 5000
+(node:10195) Warning: Accessing non-existent property 'getStockData' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+  0 passing (0ms)
+
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/services$ cd ..
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ cd middleware/
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/middleware$ mocha auth.js 
+
+
+  0 passing (1ms)
+
