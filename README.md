@@ -147,3 +147,88 @@ up to date, audited 116 packages in 726ms
 
 found 0 vulnerabilities
 
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/routes$ cd ..
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ mkdir middleware
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ cd middleware/
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/middleware$ npm install jsonwebtoken bcryptjs
+
+added 15 packages, and audited 131 packages in 2s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/middleware$ touch auth.js
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform/middleware$ cd ..
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-platform$ cd ..
+labuser@ubuntu2204:~/Desktop/coursendmern4$ npx create-react-app stock-trading-frontend
+
+Creating a new React app in /home/labuser/Desktop/coursendmern4/stock-trading-frontend.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1483 packages in 2m
+
+261 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 63 packages, and changed 1 package in 10s
+
+261 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1546 packages in 3s
+
+261 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created stock-trading-frontend at /home/labuser/Desktop/coursendmern4/stock-trading-frontend
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd stock-trading-frontend
+  npm start
+
+Happy hacking!
+labuser@ubuntu2204:~/Desktop/coursendmern4$ cd stock-trading-frontend
+labuser@ubuntu2204:~/Desktop/coursendmern4/stock-trading-frontend$ npm install axios socket.io-client redux react-redux
+
+added 14 packages, and audited 1560 packages in 6s
+
+261 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
